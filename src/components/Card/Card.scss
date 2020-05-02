@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.cards-list {
+  .card {
+    height: $cardSize;
+    width: $cardSize;
+    margin: $cardSize / 3;
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: grey;
+    @include type-border;
+  }
+}

@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin type-colors {
+  &.agl {
+    background-color: $agl;
+  }
+  &.teq {
+    background-color: $teq;
+  }
+  &.int {
+    background-color: $int;
+  }
+  &.phy {
+    background-color: $phy;
+  }
+  &.str {
+    background-color: $str;
+  }
+}
+
+@mixin type-border {
+  border-style: solid;
+  border-width: 4px;
+  box-sizing: border-box;
+  &.agl {
+    border-color: $agl;
+  }
+  &.teq {
+    border-color: $teq;
+  }
+  &.int {
+    border-color: $int;
+  }
+  &.phy {
+    border-color: $phy;
+  }
+  &.str {
+    border-color: $str;
+  }
+}

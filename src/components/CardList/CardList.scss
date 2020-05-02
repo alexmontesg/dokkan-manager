@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+.cards-list {
+  width: $cardSize * 1.725 * 5;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: $cardSize * 1.725 * 5) {
+    width: $cardSize * 1.725 * 4;
+  }
+  @media (max-width: $cardSize * 1.725 * 4) {
+    width: $cardSize * 1.725 * 3;
+  }
+  @media (max-width: $cardSize * 1.725 * 3) {
+    width: $cardSize * 1.725 * 2;
+  }
+  @media (max-width: $cardSize * 1.725 * 2) {
+    width: $cardSize * 1.725;
+  }
+}

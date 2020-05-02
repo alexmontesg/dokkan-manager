@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+
+$header-height: 100px;
+$title-small: 22px;
+
+header {
+  height: $header-height;
+  background: linear-gradient(-60deg, transparent 10%, $header 0, $header 90%, transparent 0);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  h1 {
+    margin: 0;
+    line-height: $header-height;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 3px 3px black;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+    h1 {
+      font-size: $title-small;
+      line-height: $title-small;
+      padding-top: ($header-height - $title-small) / 2;
+    }
+  }
+  @media (max-width: 500px) {
+    background: $header;
+  }
+}
